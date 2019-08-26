@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     public Button bt1;
     public Button bt2;
     public Button bt3;
+    public Button bt4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         bt1 = findViewById(R.id.id_bt1);
         bt2 = findViewById(R.id.id_bt2);
         bt3 = findViewById(R.id.id_bt3);
+        bt4 = findViewById(R.id.id_bt4);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,18 +30,24 @@ public class MainActivity extends AppCompatActivity {
         bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                showToase(Utils.getCoinMoney(new CoinMoney(2)) + "");
             }
         });
         bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                showToase(Utils.getCoin().getMoney() + "");
+            }
+        });
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showToase(Utils.getCoinMoney(new CoinMoney(123)) + "");
             }
         });
     }
 
-    private void showToase(String msg){
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+    private void showToase(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }

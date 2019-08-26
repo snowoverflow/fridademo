@@ -7,7 +7,7 @@ package com.yangjl.fridademo;
  * @描述:
  */
 public class Utils {
-    public static String getPwd(String info){
+    public static String _getPwd(String info){
         return info+"yangjl";
     }
 

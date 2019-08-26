@@ -9,17 +9,23 @@
         android:id="@+id/id_bt1"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="bt1" />
+        android:text="普通方法" />
 
     <Button
         android:id="@+id/id_bt2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="bt2" />
+        android:text="构造方法" />
 
     <Button
         android:id="@+id/id_bt3"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="bt3" />
+        android:text="修改自定义类型对象" />
+
+    <Button
+        android:id="@+id/id_bt4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="修改自定义类型对象的属性" />
 </LinearLayout>
